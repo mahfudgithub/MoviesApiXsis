@@ -7,6 +7,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Movies21Xsis.DataContext;
+using Movies21Xsis.Exceptions;
+using Movies21Xsis.Interface;
+using Movies21Xsis.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,6 +36,8 @@ namespace Movies21Xsis
             {
                 option.UseNpgsql(ConnectionString);
             });
+
+            services.AddTransient<IMovies, MovieRepository>();
 
             services.AddCors(option =>
             {
@@ -61,6 +66,8 @@ namespace Movies21Xsis
 
             app.UseAuthorization();
             app.UseCors(_policyName);
+
+            app.ConfigureExceptionHandler();
 
             app.UseEndpoints(endpoints =>
             {
