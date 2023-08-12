@@ -11,6 +11,8 @@ namespace Movies21Xsis.DataContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
+            ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+            this.ChangeTracker.LazyLoadingEnabled = false;
         }
 
         public DbSet<Movie> Movies { get; set; }
