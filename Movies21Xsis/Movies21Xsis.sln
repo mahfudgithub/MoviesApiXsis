@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33214.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies21Xsis", "Movies21Xsis.csproj", "{CE51CCB2-14C7-447C-A0C5-397E666F4590}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies21Xsis", "Movies21Xsis.csproj", "{CE51CCB2-14C7-447C-A0C5-397E666F4590}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "..\LoggerService\LoggerService.csproj", "{00E6462E-32E1-4713-B277-9B643301CC48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerService", "..\LoggerService\LoggerService.csproj", "{00E6462E-32E1-4713-B277-9B643301CC48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesApiXsis.Test", "..\MoviesApiXsis.Test\MoviesApiXsis.Test.csproj", "{B36EFC74-8472-4BF0-A339-58AC3222ADBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies21Xsis.Test", "..\Movies21Xsis.Test\Movies21Xsis.Test.csproj", "{B4BD2C76-F232-44C0-9E61-39B8DF986376}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{00E6462E-32E1-4713-B277-9B643301CC48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00E6462E-32E1-4713-B277-9B643301CC48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00E6462E-32E1-4713-B277-9B643301CC48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B36EFC74-8472-4BF0-A339-58AC3222ADBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B36EFC74-8472-4BF0-A339-58AC3222ADBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B36EFC74-8472-4BF0-A339-58AC3222ADBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B36EFC74-8472-4BF0-A339-58AC3222ADBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4BD2C76-F232-44C0-9E61-39B8DF986376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4BD2C76-F232-44C0-9E61-39B8DF986376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4BD2C76-F232-44C0-9E61-39B8DF986376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4BD2C76-F232-44C0-9E61-39B8DF986376}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
