@@ -53,7 +53,7 @@ Response :
 	"status" : "boolean",
 	"message" : "string",
 	"data" : {
-		"id" : integer,
+		"id" : "integer",
 		"title" : "string",
 		"description" : "string",
 		"rating" : "decimal",
@@ -75,7 +75,7 @@ Request :
 {   
 	"title" : "string",
 	"description" : "string",
-	"rating" : decimal,
+	"rating" : "decimal",
 	"image" : "string",
 }
 ```
@@ -87,10 +87,10 @@ Response :
 	"status" : "boolean",
 	"message" : "string",
 	"data" : {
-		"id" : integer,
+		"id" : "integer",
 		"title" : "string",
 		"description" : "string",
-		"rating" : decimal,
+		"rating" : "decimal",
 		"image" : "string",
 		"created_at" : "Datetime",
 		"updated_at" : null		
@@ -106,10 +106,10 @@ Request :
     - Content-Type : application-json
 - Body :
 ```json 
-{
-   "title" : "string",
+{   
+	"title" : "string",
 	"description" : "string",
-	"rating" : decimal,
+	"rating" : "decimal",
 	"image" : "string",
 }
 ```
