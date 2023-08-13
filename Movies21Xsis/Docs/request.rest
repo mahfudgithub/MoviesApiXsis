@@ -1,0 +1,34 @@
+@Host= http://localhost:51131/api
+
+###
+GET {{Host}}/Movies
+
+###
+GET {{Host}}/Movies/8
+
+###
+POST {{Host}}/Movies
+Content-Type: application/json
+
+{
+    "title":"The Godfather 1",
+    "description": "Don Vito Corleone, head of a mafia family, decides to hand over his empire to his youngest son Michael. However, his decision unintentionally puts the lives of his loved ones in grave danger",
+    "rating":9.7,
+    "image":""
+}
+
+###
+PATCH {{Host}}/Movies/8
+Content-Type: application/json
+
+{
+    "title":"The Godfather 10",
+    "description": "Don Vito Corleone, Head of a Aafia family, decides to hand over his empire to his youngest son Michael. However, his decision unintentionally puts the lives of his loved ones in grave danger",
+    "rating":9.3,
+    "image":""
+}
+
+###
+DELETE {{Host}}/Movies/8
+
+
