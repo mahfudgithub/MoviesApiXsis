@@ -4,7 +4,7 @@ The following examples HTTP Request for this function :
 - GET `/movies`, get the list of all movies
 - GET `/movies/1`, get the detail of movies with ID `1`
 - POST `/movies`, store single movie
-- PATCH `/PATCH/1`, update detail of movies with ID `1`
+- PATCH `/movies/1`, update detail of movies with ID `1`
 - DELETE `/movies/1`, delete movie with ID `1`
 
 ## Get list of Movie
